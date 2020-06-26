@@ -1,0 +1,17 @@
+.about {
+    position: relative;
+    &::before {
+        content: 'A';
+        z-index: -2;
+        right: 16%;
+        left: inherit;
+    }
+    &::after {
+        content: 'about';
+        left: -3.5rem;
+        right: inherit;
+    }
+    &__content {
+        padding-left: 50px;
+    }
+}

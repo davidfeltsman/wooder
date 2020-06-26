@@ -1,0 +1,48 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 1rem 20.5rem;
+    &__logo {
+        color: #fff;
+        font-family: "ProximaNovaBold";
+        font-size: 2.25rem;
+        text-transform: uppercase;
+        letter-spacing: 0.62rem;
+        position: relative;
+        margin-right: 6.25rem;
+        &::after {
+            content: '';
+            display: block;
+            width: 64px;
+            height: 4px;
+            background-color: $primary-color;
+            position: absolute;
+            top: 50%;
+            left: 43px;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.top-nav {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    &__link {
+        font-family: "ProximaNovaBold";
+        color: #fff;
+        opacity: .5;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-right: 7.5rem;
+        transition: opacity .3s ease-in-out ;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

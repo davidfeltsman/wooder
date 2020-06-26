@@ -1,0 +1,11 @@
+$primary-color: #bea67c;
+$secondary-color: #464646;
+
+@keyframes arrowScroll {
+    0%{transform: translateX(0);}
+    10% {transform: translateX(0);}
+    30% {transform: translateX(-7px);}
+    50% {transform: translateX(0);}
+}
+
+$content-width: 63vw;
